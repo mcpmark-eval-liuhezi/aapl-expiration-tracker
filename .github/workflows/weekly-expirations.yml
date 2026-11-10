@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo billable digest line
-        run: echo "Weekly AAPL expirations digest — github run minutes accumulated, $ (approx #billable-minutes# minutes, jobs: digest)"
+        run: echo "Weekly AAPL expirations digest — run took about 8 seconds; this is a minimal manual trigger."
