@@ -1,0 +1,11 @@
+name: Weekly Expirations Digest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo billable digest line
+        run: echo "Weekly AAPL expirations digest — run took about 8 seconds; this is a minimal manual trigger."
