@@ -1,0 +1,11 @@
+name: Weekly Expirations Digest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo billable digest line
+        run: echo "Weekly AAPL expirations digest — github run minutes accumulated, $ (approx #billable-minutes# minutes, jobs: digest)"
