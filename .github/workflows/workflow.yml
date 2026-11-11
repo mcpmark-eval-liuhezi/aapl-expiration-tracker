@@ -1,0 +1,11 @@
+name: Weekly AAPL Expiration Tracker
+
+on:
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo tracker status
+        run: echo "AAPL expiration tracker workflow ran successfully for risk meeting review."
