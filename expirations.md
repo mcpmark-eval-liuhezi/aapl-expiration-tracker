@@ -1,9 +1,9 @@
-# AAPL Option Expiration Tracker
+# AAPL Expiration Tracker
 
-Weekly snapshot of Apple (AAPL) option expirations — company profile, available expiration dates, and per-expiration chain statistics for the three soonest upcoming expirations.
+Weekly AAPL option expiration tracking — company snapshot, available expiration dates, and per-expiration chain statistics for the three soonest upcoming expirations.
 
-**Data source:** Yahoo Finance (live data, pulled 2026-10-22, latest completed session)
-**Share price used:** $348.22 (AAPL current price as returned by the source)
+**Data source:** Yahoo Finance (live data, pulled 2026-11-10, latest completed session)
+**Share price used:** $348.51 (AAPL current price as returned by the source)
 
 ## Company Snapshot
 
@@ -15,52 +15,49 @@ Weekly snapshot of Apple (AAPL) option expirations — company profile, availabl
 | State / ZIP / Country | CA 95014, United States |
 | Sector | Technology |
 | Industry | Consumer Electronics |
-| Current share price | $348.22 |
+| Current share price | $348.51 |
 
 ## Available Option Expiration Dates
 
-As returned by the source (21 dates, all on or after the 2026-10-22 data date):
+As returned by the source (22 dates):
 
-1. 2026-10-23
-2. 2026-10-26
-3. 2026-10-28
-4. 2026-10-30
-5. 2026-11-06
-6. 2026-11-13
-7. 2026-11-20
-8. 2026-11-27
+1. 2026-11-11
+2. 2026-11-13
+3. 2026-11-16
+4. 2026-11-18
+5. 2026-11-20
+6. 2026-11-27
+7. 2026-12-04
+8. 2026-12-11
 9. 2026-12-18
-10. 2027-01-15
-11. 2027-02-19
-12. 2027-03-19
-13. 2027-04-16
-14. 2027-06-17
-15. 2027-09-17
-16. 2027-12-17
-17. 2028-01-21
-18. 2028-03-17
-19. 2028-06-16
-20. 2028-12-15
-21. 2029-01-19
+10. 2026-12-24
+11. 2027-01-15
+12. 2027-02-19
+13. 2027-03-19
+14. 2027-04-16
+15. 2027-06-17
+16. 2027-09-17
+17. 2027-12-17
+18. 2028-01-21
+19. 2028-03-17
+20. 2028-06-16
+21. 2028-12-15
+22. 2029-01-19
+
+This week's focus (three soonest upcoming): **2026-11-11, 2026-11-13, 2026-11-16**.
 
 ## Per-Expiration Chain Statistics
 
-The three soonest upcoming expirations (share price used: $348.22):
+Share price used: **$348.51** (SN: closest-to-price strike; COI: call strike w/ largest open interest; POI: put strike w/ largest open interest).
 
-| Expiration | ATM strike (closest to $348.22) | Call strike w/ largest open interest | Put strike w/ largest open interest |
+| Expiration | ATM strike (closest to $348.51) | Highest-OI call strike | Highest-OI put strike |
 |---|---|---|---|
-| 2026-10-23 | 310.0 (see note) | none — all strikes tied at 0 OI | none — all strikes tied at 0 OI |
-| 2026-10-26 | 347.5 | none — all strikes tied at 0 OI | none — all strikes tied at 0 OI |
-| 2026-10-28 | 347.5 | none — all strikes tied at 0 OI | none — all strikes tied at 0 OI |
-
-### Data notes (reported exactly as the source returned)
-
-1. **Open interest is 0 on every contract returned, on both the call and put side, for all three expirations.** Because all strikes report identical open interest of 0, there is no single "largest open interest" strike; every strike ties. No leader is listed above for that reason.
-2. **The 2026-10-23 expiration chain response was truncated by the source before reaching the near-money strikes.** The call chain returned strikes only up to 310.0 and the put chain only up to 265.0; no strike in the ~345–350 range was present in the returned data. The ATM strike of 310.0 shown above is simply the closest strike to $348.22 among the strikes the source actually returned for that expiry, and should be treated with caution — it is not a true at-the-money strike.
-3. The 2026-10-26 and 2026-10-28 chains included the strikes 345.0, 347.5, and 350.0, making 347.5 the closest strike to the $348.22 share price on both those expirations.
+| 2026-11-11 | 347.5 (SN) | 355 (COI 32,028 per AAPL261111C00355000) | 345 (POI 4,004 per AAPL261111P00345000) |
+| 2026-11-13 | 347.5 (SN) | 360 (COI 16,260 per AAPL261113C00360000) | 330 (POI 9,722 per AAPL261113P00330000) |
+| 2026-11-16 | 347.5 (SN) | 355 (COI 5,171 per AAPL261116C00355000) | 340 (POI 1,025 per AAPL261116P00340000) |
 
 ## Tracking Issues
 
-- #1 — Expiry 2026-10-23
-- #2 — Expiry 2026-10-26
-- #3 — Expiry 2026-10-28
+- #13 — Expiry 2026-11-11
+- #14 — Expiry 2026-11-13
+- #15 — Expiry 2026-11-16
