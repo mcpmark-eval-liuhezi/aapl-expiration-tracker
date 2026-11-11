@@ -1,0 +1,11 @@
+name: Manual smoke test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-line:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a single line
+        run: echo "AAPL expiration tracker workflow ran successfully."

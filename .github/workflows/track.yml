@@ -1,0 +1,12 @@
+---
+name: AAPL Expiration Tracker
+
+on:
+  workflow_dispatch:
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo status
+        run: echo "AAPL expiration tracker workflow executed successfully"

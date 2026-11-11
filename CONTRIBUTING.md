@@ -1,16 +1,17 @@
-# Contributing
+# Contributing to aapl-expiration-tracker
 
-Thanks for helping track AAPL option expirations!
+This repo tracks Apple (AAPL) options expirations weekly for risk meetings.
 
-## How to contribute
+## Weekly workflow
 
-1. Create a feature branch from `main` (e.g. `add-expirations`).
-2. Make your changes — update `expirations.md` with fresh market data, or add new expiry tracking issues.
-3. Open a pull request into `main` and describe what data changed and the date it was pulled.
+1. Pull live market data (Yahoo Finance).
+2. Create one tracking issue per upcoming expiration, titled `Expiry YYYY-MM-DD`.
+3. Add `expirations.md` at the repo root on a new branch and open a PR into `main`.
+4. Keep `CONTRIBUTING.md` up to date with the weekly workflow.
+5. Bring the PR branch up to date with `main`; then add a minimal `workflow.yml`
+   triggerable manually, run it once, note its billable duration, and **delete
+   the run's logs** to keep the repo tidy.
 
-## Guidelines
+## Data source
 
-- All market figures must come from live data at the time of the update — no stale or hand-typed numbers.
-- If a figure from the data source looks odd, report it exactly as returned rather than adjusting it.
-- One tracking issue per expiration, titled `Expiry YYYY-MM-DD`, kept in date order.
-- Keep `expirations.md` as the single source of truth for the current snapshot.
+All market figures come from live data (Yahoo Finance) and are reported exactly as returned.
